@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Example from "./pages/Example";
 import Home from "./pages/Home";
