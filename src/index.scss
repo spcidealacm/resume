@@ -14,3 +14,8 @@ body {
   box-sizing: border-box;
   background: #000;
 }
+
+@font-face {
+  font-family: "Alphacentauri";
+  src: local("Alphacentauri"), url("./assets/fonts/Alphacentauri-MVY4p.ttf");
+}
