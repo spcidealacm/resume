@@ -62,8 +62,8 @@ class Home extends React.Component<Props, State>{
                         </nav>
                         <section className={Style.sectionOne}>
                             <div ref={this.sceneOne}>
-                                <div data-depth="0.1" className={Style.bg}>
-                                    <img src={imgBackground} alt="background" />
+                                <div data-depth="0.1" className={Style.bg} style={{backgroundImage: `url(${imgBackground})`}}>
+                                    {/* <img src={imgBackground} alt="background" /> */}
                                 </div>
                                 <div data-depth="0.2" className={Style.rock}>
                                     <img src={imgRock} alt="rock" />

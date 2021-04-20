@@ -34,9 +34,11 @@
     section {
         height: 100vh;
         overflow: hidden;
-        .bg img {
+        .bg {
             width: 110vw;
             height: 110vh;
+            background-position: center;
+            background-size: cover;
             filter: brightness(0.6);
         }
 
