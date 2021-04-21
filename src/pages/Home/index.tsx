@@ -16,6 +16,15 @@ import imgRock from "../../assets/images/rock.png";
 import imgEarth from "../../assets/images/earth.png";
 import imgMid from "../../assets/images/mid.png";
 import imgFore from "../../assets/images/foreground.png";
+import imgMercury from "../../assets/images/mercury.png";
+import imgVenus from "../../assets/images/venus.png";
+import imgEarth1 from "../../assets/images/earth1.png";
+import imgMars from "../../assets/images/mars.png";
+import imgJupiter from "../../assets/images/jupiter.png";
+import imgSaturn from "../../assets/images/saturn.png";
+import imgUranus from "../../assets/images/uranus.png";
+import imgNeptune from "../../assets/images/neptune.png";
+
 
 import DesktopSwiper from "../../components/desktopSwiper";
 
@@ -84,7 +93,8 @@ class Home extends React.Component<Props, State>{
                             </div>
                         </section>
                         <section className={Style.sectionTwo}>
-                            <DesktopSwiper plantName="Mercury" text="01" detail="show info"></DesktopSwiper>
+                            <DesktopSwiper plantName="Mercury" text="01" detail="show imgMercury" plantImg={imgMercury}></DesktopSwiper>
+                            <DesktopSwiper plantName="Venus" text="02" detail="show imgVenus" plantImg={imgVenus}></DesktopSwiper>
                         </section>
                     </div>
                 </BrowserView>

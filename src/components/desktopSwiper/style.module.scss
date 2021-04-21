@@ -1,3 +1,13 @@
-.container{
+$imgsize: 50vw;
+
+.container {
   color: #fff;
+}
+
+.silderImg {
+  z-index: 100;
+  width: min($imgsize, $imgsize);
+  height: min($imgsize, $imgsize);
+  background-position: center;
+  background-size: cover;
 }
