@@ -17,6 +17,8 @@ import imgEarth from "../../assets/images/earth.png";
 import imgMid from "../../assets/images/mid.png";
 import imgFore from "../../assets/images/foreground.png";
 
+import DesktopSwiper from "../../components/desktopSwiper";
+
 
 
 interface Props {
@@ -81,7 +83,9 @@ class Home extends React.Component<Props, State>{
                                 </div>
                             </div>
                         </section>
-                        <section className={Style.sectionTwo}></section>
+                        <section className={Style.sectionTwo}>
+                            <DesktopSwiper plantName="Mercury" text="01" detail="show info"></DesktopSwiper>
+                        </section>
                     </div>
                 </BrowserView>
                 <MobileView>
