@@ -3,7 +3,7 @@
         position: fixed;
         z-index: 100;
         height: 8vh;
-        width: 96%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -11,22 +11,24 @@
 
         .logo {
             color: #fff;
-            font-family: "AlphaCentauri" !important;
+            font-family: "AlphaCentauri";
             font-weight: 600;
-            font-size: 2.5vh;
+            font-size: #{"max(2.5vh, 13px)"};
         }
 
         .navlinks ul {
             display: flex;
             flex-direction: row;
             li {
-                padding: 0 1vh;
+                padding: 0 #{"max(1vh, 4px)"};
                 list-style: none;
                 img {
-                    width: 2.5vh;
-                    height: 2.5vh;
-                    // transform: scale(0.45);
+                    width: #{"max(2.5vh, 13px)"};
+                    height: #{"max(2.5vh, 13px)"};
                 }
+            }
+            li:last-child{
+                padding-right: #{"max(3vh, 20px)"};
             }
         }
     }
@@ -39,22 +41,25 @@
             height: 110vh;
             background-position: center;
             background-size: cover;
-            filter: brightness(0.6);
+            filter: brightness(0.7);
         }
 
-        .rock1 {
-            position: absolute !important;
-            left: 10vw !important;
-            top: 20vh !important;
+        .rock {
+            width: 100vw;
+            height: 100vh;
             img {
-                width: 40%;
-                filter: brightness(0.5);
+                position: absolute;
+                width: #{"min(max(15vw, 25px), 15vh)"};
+                left: 10vw;
+                top: 20vh;
+                filter: brightness(0.65);
             }
         }
 
+
         .text h1 {
-            font-family: "AlphaCentauri" !important;
-            font-size: 5vw;
+            font-family: "AlphaCentauri";
+            font-size: #{"max(5vw, 25px)"};
             color: #fff;
             letter-spacing: 20px;
             position: absolute;
@@ -63,8 +68,8 @@
         }
 
         .earth img {
-            width: 30vw;
-            height: 30vw;
+            width: #{"max(35vw, 260px)"};
+            height: #{"max(35vw, 260px)"};
             position: absolute;
             left: 34vw;
             top: 25vh;
