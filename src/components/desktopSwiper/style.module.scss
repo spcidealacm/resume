@@ -6,8 +6,8 @@ $imgsize: 50vw;
 
 .silderImg {
   z-index: 100;
-  width: min($imgsize, $imgsize);
-  height: min($imgsize, $imgsize);
+  width: $imgsize;
+  height: $imgsize;
   background-position: center;
   background-size: cover;
 }

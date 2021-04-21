@@ -1,12 +1,12 @@
 import React from "react";
-import ReactDom from "react-dom";
+// import ReactDom from "react-dom";
 import Style from "./style.module.scss";
 import earthImg from "../../assets/images/earth.png";
 import {
   BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile
+  // MobileView,
+  // isBrowser,
+  // isMobile
 } from "react-device-detect";
 
 
