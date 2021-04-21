@@ -57,47 +57,55 @@
         }
 
 
-        .text h1 {
-            font-family: "AlphaCentauri";
-            font-size: #{"max(5vw, 25px)"};
-            color: #fff;
-            letter-spacing: 20px;
-            position: absolute;
-            top: 35vh;
-            left: 34vw;
+        .text{
+            width: 100vw;
+            height: 100vh;
+            div{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    font-family: "AlphaCentauri";
+                    font-size: #{"max(5vw, 25px)"};
+                    color: #fff;
+                    letter-spacing: 20px;
+                }
+            }
         }
 
         .earth img {
-            width: #{"max(35vw, 260px)"};
-            height: #{"max(35vw, 260px)"};
+            width: #{"max(40vw, 260px)"};
+            height: #{"max(40vw, 260px)"};
             position: absolute;
-            left: 34vw;
-            top: 25vh;
+            left: #{"min(30vw, calc(50vw - 130px))"};
+            top: #{"min(25vh, calc(50vh - 130px))"};
             z-index: 1;
             filter: brightness(0.7);
         }
 
         .mid {
-            left: -150px !important;
-            bottom: -100px !important;
-            top: unset !important;
+            width: 100vw;
+            height: 100vh;
             img {
+                position: absolute;
                 width: 100%;
                 z-index: 2;
-                left: -20px;
-                top: 20vh !important;
+                left: -10px;
+                bottom: -100px;
                 filter: brightness(0.8);
             }
         }
 
         .fore {
-            right: -50px !important;
-            bottom: -200px !important;
-            top: 0px !important;
-            left: unset !important;
+            width: 100vw;
+            height: 100vh;
             img {
-                width: 400px;
-                height: 110vh;
+                position: absolute;
+                width: 30%;
+                right: -11vw;
+                bottom: -2px;
                 z-index: 3;
                 filter: brightness(0.5);
             }

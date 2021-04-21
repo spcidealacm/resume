@@ -62,7 +62,7 @@ class Home extends React.Component<Props, State>{
                         </nav>
                         <section className={Style.sectionOne}>
                             <div ref={this.sceneOne}>
-                                <div data-depth="0.1" className={Style.bg} style={{backgroundImage: `url(${imgBackground})`}}>
+                                <div data-depth="0.1" className={Style.bg} style={{ backgroundImage: `url(${imgBackground})` }}>
                                 </div>
                                 <div data-depth="0.2" className={Style.rock}>
                                     <img src={imgRock} alt="rock" />
@@ -71,7 +71,7 @@ class Home extends React.Component<Props, State>{
                                     <img src={imgEarth} alt="earth" />
                                 </div>
                                 <div data-depth="0.1" className={Style.text}>
-                                    <h1>PLANETS</h1>
+                                    <div><h1>PLANETS</h1></div>
                                 </div>
                                 <div data-depth="0.4" className={Style.mid}>
                                     <img src={imgMid} alt="mid" />
