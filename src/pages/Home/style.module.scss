@@ -26,12 +26,18 @@
         font-family: "Alphacentauri";
         font-weight: 600;
         font-size: #{"max(2.5vh, 13px)"};
+        @media screen and (max-width: 1250px) {
+          display: none;
+        }
       }
     }
 
     .navlinks ul {
       display: flex;
       flex-direction: row;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
 
       li {
         padding: 0 #{"max(1vh, 4px)"};

@@ -127,7 +127,7 @@ class Home extends React.Component<Props, State>{
 
             <div>
               <div className={Style.rockLinkbg}>
-                <img src="" alt=""/>
+                <img src="" alt="" />
               </div>
               <div className={Style.plantLinks}></div>
             </div>
@@ -136,7 +136,7 @@ class Home extends React.Component<Props, State>{
         </BrowserView>
         <MobileView>
           <div className={Style.mobileHome}>
-            <h1 className={Style.title}> just a test </h1>
+            <h1 className={Style.title}> Please use desktop to watch </h1>
           </div>
         </MobileView>
       </>
