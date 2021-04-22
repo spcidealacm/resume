@@ -1,13 +1,48 @@
-$imgsize: 50vw;
+$imgsize: 25vw;
 
-.container {
+.slide {
   color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  .detailText {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    p{
+      text-align: justify;
+    }
+    .detailKeyInfo {
+      display: inline;
+      h5 {
+        display: inline;
+        padding: 0 10px 0 0;
+      }
+    }
+  }
 }
 
 .silderImg {
-  z-index: 100;
+  // z-index: 100;
+  display: inline-block;
   width: $imgsize;
   height: $imgsize;
   background-position: center;
   background-size: cover;
+  border: 1px solid #fff;
 }

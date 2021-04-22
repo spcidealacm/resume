@@ -22,6 +22,19 @@ import imgHead from "../../assets/images/headimg.png";
 import DesktopSwiper from "../../components/desktopSwiper";
 import plantsData from "../../mockdata/plants.json";
 
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { SwiperSlide, Swiper } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
 
 
 interface Props {
@@ -57,8 +70,8 @@ class Home extends React.Component<Props, State>{
           <div className={Style.pcHome}>
             <nav className={Style.nav}>
               <div className={Style.logo}>
-                <img src={imgHead} alt="headimg logo"/>
-                <span>Tianyang Resume Demo.</span> 
+                <img src={imgHead} alt="headimg logo" />
+                <span>Tianyang Resume Demo.</span>
               </div>
               <div className={Style.navlinks}>
                 <ul>
@@ -90,19 +103,35 @@ class Home extends React.Component<Props, State>{
               </div>
             </section>
             <section className={Style.sectionTwo}>
-              {plantsData.map((element) => {
-                return <DesktopSwiper
-                  key={element.plantName}
-                  plantName={element.plantName}
-                  text={element.text}
-                  detail={element.detail}
-                  earthDays={element.earthDays}
-                  plantMoons={element.plantMoons}
-                  plantImg={element.plantImg}
-                />
-              })};
-
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}>
+                {plantsData.map((element) => {
+                  return <SwiperSlide><DesktopSwiper
+                    key={element.plantName}
+                    plantName={element.plantName}
+                    text={element.text}
+                    detail={element.detail}
+                    earthDays={element.earthDays}
+                    plantMoons={element.plantMoons}
+                    plantImg={element.plantImg}
+                  /></SwiperSlide>
+                })};
+              </Swiper>
             </section>
+
+            <div>
+              <div className={Style.rockLinkbg}>
+                <img src="" alt=""/>
+              </div>
+              <div className={Style.plantLinks}></div>
+            </div>
+
           </div>
         </BrowserView>
         <MobileView>

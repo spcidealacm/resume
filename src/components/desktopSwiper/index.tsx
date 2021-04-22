@@ -3,11 +3,14 @@ import React from "react";
 import Style from "./style.module.scss";
 import earthImg from "../../assets/images/earth.png";
 import {
-  BrowserView,
+  // BrowserView,
   // MobileView,
   // isBrowser,
   // isMobile
 } from "react-device-detect";
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
 
 
 interface Props {
@@ -46,33 +49,25 @@ class DesktopSwiper extends React.Component<Props, State>{
   render() {
     return (
       <>
-        <BrowserView>
-          <div className={Style.container}>
-            <div className={Style.wrapper}>
-              <div className={Style.slide}>
-                <div className={Style.sliderNumber}>
-                  <p><span>{this.state.plantName}</span></p>
-                </div>
-                <div className={Style.sliderText}>
-                  <p><span>{this.state.text}</span></p>
-                </div>
-                <div className={Style.silderDetail}>
-                  <p><span>{this.state.detail}</span></p>
-                </div>
-                <div className={Style.silderDetailFacts}>
-                  <div>
-                    <h5>ORBIT PERIOD: <span>{this.state.earthDays}</span></h5>
-                  </div>
-                  <div>
-                    <h5>KNOW MOONS: <span>{this.state.plantMoons}</span></h5>
-                  </div>
-                </div>
-                <div className={Style.silderImg} style={{ backgroundImage: `url(${this.state.plantImg})` }}>background
-                </div>
+        <div className={Style.slide}>
+          {/* Title */}
+          <div className={Style.title}>
+
+            <h4>{this.state.text}</h4>
+            <span>{this.state.plantName}</span>
+          </div>
+          {/* Detail */}
+          <div className={Style.detail}>
+            <div className={Style.silderImg} style={{ backgroundImage: `url(${this.state.plantImg})` }}></div>
+            <div className={Style.detailText}>
+              <p>{this.state.detail}</p>
+              <div className={Style.detailKeyInfo}>
+                <h5>ORBIT PERIOD: <span>{this.state.earthDays}</span></h5>
+                <h5>KNOW MOONS: <span>{this.state.plantMoons}</span></h5>
               </div>
             </div>
           </div>
-        </BrowserView>
+        </div>
       </>
     )
   }
