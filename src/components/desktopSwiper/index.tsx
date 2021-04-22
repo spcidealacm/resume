@@ -62,8 +62,12 @@ class DesktopSwiper extends React.Component<Props, State>{
             <div className={Style.detailText}>
               <p>{this.state.detail}</p>
               <div className={Style.detailKeyInfo}>
-                <h5>ORBIT PERIOD: <span>{this.state.earthDays}</span></h5>
-                <h5>KNOW MOONS: <span>{this.state.plantMoons}</span></h5>
+                <div>
+                  <h5>ORBIT PERIOD: <span>{this.state.earthDays}</span></h5>
+                </div>
+                <div>
+                  <h5>KNOW MOONS: <span>{this.state.plantMoons}</span></h5>
+                </div>
               </div>
             </div>
           </div>
