@@ -16,6 +16,7 @@ import imgRock from "../../assets/images/rock.png";
 import imgEarth from "../../assets/images/earth.png";
 import imgMid from "../../assets/images/mid.png";
 import imgFore from "../../assets/images/foreground.png";
+import imgHead from "../../assets/images/headimg.png";
 
 
 import DesktopSwiper from "../../components/desktopSwiper";
@@ -55,7 +56,10 @@ class Home extends React.Component<Props, State>{
         <BrowserView>
           <div className={Style.pcHome}>
             <nav className={Style.nav}>
-              <div className={Style.logo}>Explore.</div>
+              <div className={Style.logo}>
+                <img src={imgHead} alt="headimg logo"/>
+                <span>Tianyang Resume Demo.</span> 
+              </div>
               <div className={Style.navlinks}>
                 <ul>
                   <li><img src={imgLinkedin} alt="linkedin logo" /></li>

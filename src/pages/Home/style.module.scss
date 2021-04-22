@@ -1,129 +1,142 @@
 .pcHome {
-    .nav {
-        position: fixed;
-        z-index: 100;
-        height: 8vh;
-        width: 95%;
+  .nav {
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: #{"max(2.7vh, 15px)"};
+        height: #{"max(2.7vh, 15px)"};
+        margin-right: #{"max(1vh, 4px)"};
+        border-radius: 100px;
+        border: #0F75A6 solid 3px;
+      }
+
+      span {
+        color: #fff;
+        font-family: "AlphaCentauri";
+        font-weight: 600;
+        font-size: #{"max(2.5vh, 13px)"};
+      }
+    }
+
+    .navlinks ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        padding: 0 #{"max(1vh, 4px)"};
+        list-style: none;
+
+        img {
+          width: #{"max(2.5vh, 13px)"};
+          height: #{"max(2.5vh, 13px)"};
+        }
+      }
+
+      li:last-child {
+        padding-right: #{"max(3vh, 20px)"};
+      }
+    }
+  }
+
+  section {
+    height: 100vh;
+    overflow: hidden;
+
+    .bg {
+      width: 110vw;
+      height: 110vh;
+      background-position: center;
+      background-size: cover;
+      filter: brightness(0.7);
+    }
+
+    .rock {
+      width: 100vw;
+      height: 100vh;
+
+      img {
+        position: absolute;
+        width: #{"min(max(15vw, 25px), 15vh)"};
+        left: 10vw;
+        top: 20vh;
+        filter: brightness(0.65);
+      }
+    }
+
+
+    .text {
+      width: 100vw;
+      height: 100vh;
+
+      div {
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 10px 30px;
 
-        .logo {
-            color: #fff;
-            font-family: "AlphaCentauri";
-            font-weight: 600;
-            font-size: #{"max(2.5vh, 13px)"};
+        h1 {
+          font-family: "AlphaCentauri";
+          font-size: #{"max(5vw, 25px)"};
+          color: #fff;
+          letter-spacing: 20px;
         }
-
-        .navlinks ul {
-            display: flex;
-            flex-direction: row;
-
-            li {
-                padding: 0 #{"max(1vh, 4px)"};
-                list-style: none;
-
-                img {
-                    width: #{"max(2.5vh, 13px)"};
-                    height: #{"max(2.5vh, 13px)"};
-                }
-            }
-
-            li:last-child {
-                padding-right: #{"max(3vh, 20px)"};
-            }
-        }
+      }
     }
 
-    section {
-        height: 100vh;
-        overflow: hidden;
-
-        .bg {
-            width: 110vw;
-            height: 110vh;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(0.7);
-        }
-
-        .rock {
-            width: 100vw;
-            height: 100vh;
-
-            img {
-                position: absolute;
-                width: #{"min(max(15vw, 25px), 15vh)"};
-                left: 10vw;
-                top: 20vh;
-                filter: brightness(0.65);
-            }
-        }
-
-
-        .text {
-            width: 100vw;
-            height: 100vh;
-
-            div {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                h1 {
-                    font-family: "AlphaCentauri";
-                    font-size: #{"max(5vw, 25px)"};
-                    color: #fff;
-                    letter-spacing: 20px;
-                }
-            }
-        }
-
-        .earth img {
-            width: #{"max(40vw, 260px)"};
-            height: #{"max(40vw, 260px)"};
-            position: absolute;
-            left: #{"min(30vw, calc(50vw - 130px))"};
-            top: #{"min(25vh, calc(50vh - 130px))"};
-            z-index: 1;
-            filter: brightness(0.7);
-        }
-
-        .mid {
-            width: 100vw;
-            height: 100vh;
-
-            img {
-                position: absolute;
-                width: 100%;
-                z-index: 2;
-                left: -10px;
-                bottom: -100px;
-                filter: brightness(0.8);
-            }
-        }
-
-        .fore {
-            width: 100vw;
-            height: 100vh;
-
-            img {
-                position: absolute;
-                width: 30%;
-                right: -11vw;
-                bottom: -2px;
-                z-index: 3;
-                filter: brightness(0.5);
-            }
-        }
+    .earth img {
+      width: #{"max(40vw, 260px)"};
+      height: #{"max(40vw, 260px)"};
+      position: absolute;
+      left: #{"min(30vw, calc(50vw - 130px))"};
+      top: #{"min(25vh, calc(50vh - 130px))"};
+      z-index: 1;
+      filter: brightness(0.7);
     }
+
+    .mid {
+      width: 100vw;
+      height: 100vh;
+
+      img {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        left: -10px;
+        bottom: -100px;
+        filter: brightness(0.8);
+      }
+    }
+
+    .fore {
+      width: 100vw;
+      height: 100vh;
+
+      img {
+        position: absolute;
+        width: 30%;
+        right: -11vw;
+        bottom: -2px;
+        z-index: 3;
+        filter: brightness(0.5);
+      }
+    }
+  }
 }
 
 .mobileHome {
-    .title {
-        color: #fff;
-    }
+  .title {
+    color: #fff;
+  }
 }

@@ -19,3 +19,21 @@ body {
   font-family: "Alphacentauri";
   src: local("Alphacentauri"), url("./assets/fonts/Alphacentauri-MVY4p.ttf");
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 0px;
+
+  background-color: rgba(4, 137, 246, 0);
+}
+
+// ::-webkit-scrollbar-track{
+//   box-shadow: inset 0 0 6px rgba(0,0,0,0);
+//   background-color: #fff;
+// }
+
+::-webkit-scrollbar-thumb{
+  border-radius: 2.5px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0);
+  background-color: rgba(4, 39, 236, 0.7);
+}
